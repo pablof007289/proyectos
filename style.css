@@ -62,3 +62,10 @@ h1, h2, h3 {
       padding: 8px 16px; 
     }
   }
+
+  @media (min-width: 601px) {
+    .boton {
+      font-size: 18px;  
+      padding: 12px 24px; 
+    }
+  }
