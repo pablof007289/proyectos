@@ -39,7 +39,7 @@ async function metodoBurbuja() {
           barras[j + 1].style.height = `${numeros[j + 1] * 4}px`;
           barras[j + 1].textContent = numeros[j + 1];
   
-          await delay(2000);
+          await delay(2500);
         }
       }
     }
