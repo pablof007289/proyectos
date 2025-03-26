@@ -17,9 +17,9 @@ h1, h2, h3 {
 }
 
 .Iniciar-metodo{
-    position: absolute;
-    left: 645px;
-    top: 450px;
+    position: relative;
+    left: auto;
+    top: auto;
     background-color: rgb(255, 255, 255);
     color: black;
     display: inline-block;
