@@ -104,3 +104,11 @@ h1, h2, h3 {
       font-size: 14px;
   }
 }
+
+.codigo {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  overflow-x: auto;
+}

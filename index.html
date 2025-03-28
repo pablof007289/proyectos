@@ -14,5 +14,32 @@
     <button class="Iniciar-metodo" onclick="metodoBurbuja()">Iniciar metodo de la burbuja</button>
 
     <script src="script.js"></script>
+
+    <div id="codigo">
+        <pre><code>
+            function metodoBurbuja(arr) {
+                let n = arr.length;
+              
+                for (let i = 0; i < n - 1; i++) {
+                  for (let j = 0; j < n - 1 - i; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                      let temp = arr[j];
+                      arr[j] = arr[j + 1];
+                      arr[j + 1] = temp;
+                    }
+                  }
+                }
+              
+                return arr;
+              }
+              
+              let array = [10, 20, 30, 40, 50, 60];
+              console.log("Arreglo original:", array);
+              
+              let arregloOrdenado = metodoBurbuja(array);
+              console.log("Array ordenado:", arregloOrdenado);
+              
+        </code></pre>
+      </div>
 </body>    
 </html>
