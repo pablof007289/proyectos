@@ -48,8 +48,8 @@ h1, h2, h3 {
   flex-wrap: wrap;
   gap: 10px;
   width: 90%;
-  max-width: 1000px;
-  min-height: 300px;
+  max-width: 600px;
+  min-height: 400px;
   background: rgb(117, 116, 116);
   padding: 20px;
   border-radius: 12px;
