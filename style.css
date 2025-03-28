@@ -112,11 +112,3 @@ h1, h2, h3 {
   background-color: #f4f4f4;
   overflow-x: auto;
 }
-
-code {
-  display: block; /* Hace que el código ocupe toda la línea */
-  font-family: monospace; /* Fuente monoespaciada para el código */
-  font-size: 16px; /* Tamaño de la fuente */
-  white-space: pre-wrap; /* Evita que el texto se corte o desborde */
-  word-wrap: break-word; /* Permite que las palabras largas se rompan */
-}
