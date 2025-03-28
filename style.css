@@ -1,5 +1,6 @@
 body {
   background-color: rgb(0, 56, 158);
+  justify-content: center;
   color: white;
   display: flex;
   flex-direction: column;
