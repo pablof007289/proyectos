@@ -19,6 +19,7 @@
         <pre><code>
             function metodoBurbuja(arr) {
                 let n = arr.length;
+                let array = [10, 20, 30, 40, 50, 60];
               
                 for (let i = 0; i < n - 1; i++) {
                   for (let j = 0; j < n - 1 - i; j++) {
@@ -33,7 +34,6 @@
                 return arr;
               }
               
-              let array = [10, 20, 30, 40, 50, 60];
               console.log("Arreglo original:", array);
               
               let arregloOrdenado = metodoBurbuja(array);
