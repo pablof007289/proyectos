@@ -1,7 +1,7 @@
 body {
   background-color: rgb(0, 56, 158);
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,8 +49,8 @@ h1, h2, h3 {
   gap: 10px;
   width: 90%;
   max-width: 1000px;
-  min-height: 400px;
-  background: rgb(94, 64, 64);
+  min-height: 300px;
+  background: rgb(117, 116, 116);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
