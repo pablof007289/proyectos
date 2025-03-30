@@ -1,8 +1,6 @@
 const contenedor = document.getElementById("contenedor");
 
-
 let numeros = [40, 20, 60, 10, 30, 50];  
-
 
 function crearBarras() {
   contenedor.innerHTML = "";  
@@ -15,7 +13,6 @@ function crearBarras() {
     contenedor.appendChild(barra);
   });
 }
-
 
 crearBarras();
 
