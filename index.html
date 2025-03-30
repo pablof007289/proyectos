@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <script>hljs.highlightAll();</script>
+
 </head>
 <body>
     <h1>Metodo de la burbuja</h1>
@@ -16,7 +22,7 @@
     <script src="script.js"></script>
 
     <div id="codigo">
-        <pre><code>
+        <pre><code class="language-javascript">
             function metodoBurbuja(arr) {
                 let n = arr.length;
                 let array = [10, 20, 30, 40, 50, 60];
