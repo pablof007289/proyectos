@@ -37,7 +37,7 @@ h1, h2, h3 {
 }
 
 .Iniciar-metodo:hover {
-  background-color: rgb(31, 22, 22);
+  background-color: rgb(13, 17, 23);
 }
 
 
@@ -50,7 +50,7 @@ h1, h2, h3 {
   width: 90%;
   max-width: 650px;
   min-height: 400px;
-  background: rgb(0, 0, 0);
+  background: rgb(13, 17, 23);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -60,7 +60,7 @@ h1, h2, h3 {
   width: 40px;
   min-width: 30px;
   max-width: 60px;
-  background: rgb(151, 6, 6);
+  background: rgb(97, 1, 46);
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
