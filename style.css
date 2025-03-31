@@ -20,6 +20,13 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
+body hr{
+  background-color: #ffffff;
+  border: none;
+  height: 0.5px;
+  margin: 20px 0;
+  width: 95%;
+}
 
 .Iniciar-metodo {
   background-color: #000000;
@@ -35,12 +42,18 @@ h1, h2, h3 {
   max-width: 300px;
   margin: 20px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  position: relative;
 }
 
 .Iniciar-metodo:hover {
   background-color: rgb(13, 17, 23);
+  transform: scale(1.05);
 }
 
+.Iniciar-metodo:active {
+  transform: scale(0.98);
+}
 
 .contenedor {
   display: flex;
