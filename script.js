@@ -1,6 +1,6 @@
 const contenedor = document.getElementById("contenedor");
 
-let numeros = [40, 20, 60, 10, 30, 50];  
+let numeros = [60, 50, 40, 30, 20, 10];  
 let iteraciones = 0;
 
 function crearBarras() {
