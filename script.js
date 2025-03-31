@@ -1,6 +1,7 @@
 const contenedor = document.getElementById("contenedor");
 
 let numeros = [40, 20, 60, 10, 30, 50];  
+let iteraciones = 0;
 
 function crearBarras() {
   contenedor.innerHTML = "";  
@@ -24,6 +25,7 @@ async function metodoBurbuja() {
     const barras = document.querySelectorAll(".barra");
   
     for (let i = 0; i < numeros.length - 1; i++) {
+      let intercambio = false;
       for (let j = 0; j < numeros.length - i - 1; j++) {
   
         if (numeros[j] > numeros[j + 1]) {
@@ -35,9 +37,15 @@ async function metodoBurbuja() {
   
           barras[j + 1].style.height = `${numeros[j + 1] * 4}px`;
           barras[j + 1].textContent = numeros[j + 1];
-  
+          
+          intercambio = true;
           await delay(2500);
         }
       }
+      if (intercambio) {
+        iteraciones++;  
+        document.getElementById('iteraciones').textContent = `Iteraciones: ${iteraciones}`;
+      }
+      await delay(100);
     }
   }
