@@ -49,3 +49,16 @@ async function metodoBurbuja() {
       await delay(100);
     }
   }
+
+  function reiniciar() {
+  numeros = [60, 50, 40, 30, 20, 10];
+  iteraciones = 0;
+  document.getElementById('iteraciones').textContent = `Iteraciones: 0`;
+  crearBarras();
+}
+
+const botonreiniciar = document.createElement("button");
+botonreiniciar.textContent = "Reiniciar";
+botonreiniciar.classList.add("Iniciar-metodo");
+botonreiniciar.onclick = reiniciar;
+document.body.appendChild(botonreiniciar)
