@@ -47,7 +47,7 @@ async function metodoBurbuja() {
       document.getElementById('iteraciones').textContent = `Iteraciones: ${iteraciones}`;
     }
 
-    await delay(1000);
+    await delay(100);
   }
 }
 
