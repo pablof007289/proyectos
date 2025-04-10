@@ -28,32 +28,30 @@ hr{
   width: 95%;
 }
 
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
 .Iniciar-metodo {
-  background-color: #0f2027;
-  color: #ffffff;
-  display: inline-block;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #0f1f23;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid white;
   border-radius: 10px;
-  width: 90%;
-  max-width: 300px;
-  margin: 15px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border: 2px solid #ffffff;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .Iniciar-metodo:hover {
-  background-color: #203a43;
+  background-color: #1f2f33;
   transform: scale(1.05);
 }
-
-.Iniciar-metodo:active {
-  transform: scale(0.98);
-}
-
 .contenedor {
   display: flex;
   justify-content: center;

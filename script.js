@@ -58,8 +58,3 @@ function reiniciar() {
   crearBarras();
 }
 
-const botonreiniciar = document.createElement("button");
-botonreiniciar.textContent = "Reiniciar";
-botonreiniciar.classList.add("Iniciar-metodo");
-botonreiniciar.onclick = reiniciar;
-document.body.appendChild(botonreiniciar);
