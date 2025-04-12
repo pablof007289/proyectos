@@ -24,6 +24,8 @@ function delay(ms) {
 async function metodoBurbuja() {
   const barras = document.querySelectorAll(".barra");
 
+  let inicioAlgoritmo = performance.now();
+
   for (let i = 0; i < numeros.length - 1; i++) {
     let intercambio = false;
     for (let j = 0; j < numeros.length - i - 1; j++) {
@@ -49,7 +51,13 @@ async function metodoBurbuja() {
 
     await delay(100);
   }
+
+  let finAlgoritmo = performance.now();
+  let tiempoTotal = (finAlgoritmo - inicioAlgoritmo) / 1000;
+
+  document.getElementById('tiempo').textContent = `Tiempo de ejecución: ${tiempoTotal.toFixed(2)} segundos`;
 }
+
 
 function reiniciar() {
   numeros = [50, 90, 30, 100, 20, 60, 40, 70, 10, 80];
