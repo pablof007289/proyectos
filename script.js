@@ -62,7 +62,9 @@ async function metodoBurbuja() {
 function reiniciar() {
   numeros = [50, 90, 30, 100, 20, 60, 40, 70, 10, 80];
   iteraciones = 0;
+  inicioAlgoritmo = 0;
   document.getElementById('iteraciones').textContent = `Iteraciones: 0`;
+  document.getElementById('tiempo').textContent = `Tiempo de ejecución: 0 segundos`;
   crearBarras();
 }
 
