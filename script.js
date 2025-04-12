@@ -64,7 +64,7 @@ function reiniciar() {
   iteraciones = 0;
   inicioAlgoritmo = 0;
   document.getElementById('iteraciones').textContent = `Iteraciones: 0`;
-  document.getElementById('tiempo').textContent = `Tiempo de ejecución: 0 segundos`;
+  document.getElementById('tiempo').textContent = `Tiempo de ejecución:`;
   crearBarras();
 }
 
