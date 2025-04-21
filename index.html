@@ -33,31 +33,54 @@
 
     <script src="script.js"></script>
     
-    <h2>Función que ordena un arreglo de 6 enteros con el método de la burbuja</h2>
+    <h2>Pseudocódigo del funcionamiento del método de la burbuja en el Script.js</h2>
     <div id="codigo">
         <pre><code class="language-javascript">
-            function metodoBurbuja(arr) {
-                let n = arr.length;
-                let array = [10, 20, 30, 40, 50, 60];
-              
-                for (let i = 0; i < n - 1; i++) {
-                  for (let j = 0; j < n - 1 - i; j++) {
-                    if (arr[j] > arr[j + 1]) {
-                      let temp = arr[j];
-                      arr[j] = arr[j + 1];
-                      arr[j + 1] = temp;
-                    }
-                  }
-                }
-              
-                return arr;
-              }
-              
-              console.log("Arreglo original:", array);
-              
-              let arregloOrdenado = metodoBurbuja(array);
-              console.log("Array ordenado:", arregloOrdenado);
-              
+          INICIALIZAR arreglo NUMEROS con valores [50, 90, 30, 100, 20, 60, 40, 70, 10, 80]
+          INICIALIZAR ITERACIONES en 0
+          
+          FUNCION CREAR_BARRAS:
+              LIMPIAR el CONTENEDOR
+              PARA cada ELEMENTO en NUMEROS:
+                  CREAR una BARRA visual
+                  ASIGNAR altura proporcional al valor del número
+                  MOSTRAR valor del número en la barra
+                  AGREGAR la barra al CONTENEDOR
+          
+          LLAMAR a CREAR_BARRAS
+          
+          FUNCION DELAY(ms):
+              ESPERAR la cantidad de milisegundos especificados
+          
+          FUNCION METODO_BURBUJA:
+              OBTENER todas las BARRAS del contenedor
+              GUARDAR el TIEMPO_INICIO
+          
+              PARA i desde 0 hasta longitud de NUMEROS - 1:
+                  ESTABLECER INTERCAMBIO como FALSO
+          
+                  PARA j desde 0 hasta longitud de NUMEROS - i - 1:
+                      SI NUMEROS[j] > NUMEROS[j+1]:
+                          INTERCAMBIAR NUMEROS[j] con NUMEROS[j+1]
+                          ACTUALIZAR altura y texto de las BARRAS[j] y BARRAS[j+1]
+                          MARCAR INTERCAMBIO como VERDADERO
+                          ESPERAR 2.5 segundos
+          
+                  SI hubo INTERCAMBIO:
+                      INCREMENTAR ITERACIONES
+                      ACTUALIZAR el contador en la interfaz
+          
+                  ESPERAR brevemente (0.1 segundos)
+          
+              CALCULAR TIEMPO_TOTAL = tiempo actual - TIEMPO_INICIO
+              MOSTRAR tiempo total en la interfaz
+          
+          FUNCION REINICIAR:
+              REESTABLECER NUMEROS al arreglo original
+              REINICIAR ITERACIONES y TIEMPO
+              ACTUALIZAR la interfaz
+              LLAMAR a CREAR_BARRAS
+          
         </code></pre>
       </div>
 </body>    
